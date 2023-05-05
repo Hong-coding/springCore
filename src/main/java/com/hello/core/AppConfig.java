@@ -16,7 +16,7 @@ public class AppConfig { //앱동작에 필요한 구현체를 생성하는 부�
         return new MemberServiceImpl(memberRepository());
     }
 
-    private static MemberRepository memberRepository() { //메서드 명만 봐도 역할을 알 수 있게 됨.(명칭과 리턴타입) 메모리레파지토리 현재는 메모리꺼 (구현)
+    public MemberRepository memberRepository() { //메서드 명만 봐도 역할을 알 수 있게 됨.(명칭과 리턴타입) 메모리레파지토리 현재는 메모리꺼 (구현)
         return new MemoryMemberRepository();
     }
 
